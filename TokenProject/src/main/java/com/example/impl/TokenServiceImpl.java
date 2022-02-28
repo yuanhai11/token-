@@ -26,6 +26,7 @@ public class TokenServiceImpl implements TokenService {
         redisTemplate.opsForValue().set(token, token);
         Response response = new Response(0, token, null);
         return response;
+
     }
 
     @Override
